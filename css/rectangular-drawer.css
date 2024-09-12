@@ -113,7 +113,8 @@
   }
 
   .pseudo-drawer-bar2 {
-    top : 85%;
+    top : unset;
+    bottom: 5%;
     right: 50%;
     transform: translateX(50%);
     width: 12vh;
