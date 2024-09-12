@@ -41,3 +41,4 @@ Welcome to the **All Page** project, featuring an advanced search bar and drawer
   - **Music Player:** Integrated music player for seamless media control.
   - **Wallpaper Based Themes:** Special themes now includes wallpapers with them. 
   - **Clock & Dark Mode Switch:** Still easily accessible in the UI for a balanced experience.
+## Generation 3️⃣․5️⃣ : Added Support for Mobile Devices
