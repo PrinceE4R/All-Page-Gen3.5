@@ -1,0 +1,36 @@
+.optbase {
+    width: 125px;
+    height: 60px;
+    border-radius: 35px;
+    background-color: var(--colour2);
+    border: 5px solid var(--colour1);
+    position: relative;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.optbase span {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+    color: var(--colour1);
+    cursor: pointer;
+}
+.options {
+    display: none;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}

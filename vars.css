@@ -1,0 +1,7 @@
+:root {
+    --colour1: var(--system-light);
+    --colour2: var(--system-dark);
+    --br: 10px;
+    --apps-colour1: var(--colour1);
+    --apps-colour2: var(--colour2);
+}

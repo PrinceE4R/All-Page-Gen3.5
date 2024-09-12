@@ -1,0 +1,29 @@
+:root{
+    /* Pink */
+    --pink-light: #b247a7;
+    --pink-dark: #1d0e1b;
+  
+    /* Red */
+    --red-light: #b24747;
+    --red-dark: #170b0b;
+  
+    /* Yellow */
+    --yellow-light: #e1cd67;
+    --yellow-dark: #14130c;
+  
+    /* Green */
+    --green-light: #76c579;
+    --green-dark: #0d1910;
+  
+    /* Blue */
+    --blue-light: #637dc9;
+    --blue-dark: #0d1a2b;
+  
+    /* Cyan */
+    --cyan-light: #26b9b3;
+    --cyan-dark: #041b17;
+  
+    /* Purple */
+    --purple-light: #5942ac;
+    --purple-dark: #0c0718;
+}

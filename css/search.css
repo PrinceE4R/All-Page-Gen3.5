@@ -1,0 +1,124 @@
+.search-bar {
+    border-radius: 0;
+    position: absolute;
+    width: 25%;
+    height: 15%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-family: "Courier New", monospace;
+    outline: none;
+    border-radius: var(--br);
+    transition: all 0.3s ease;
+    color: var(--colour1);
+    border: 5px solid var(--colour1);
+    background-color: var(--colour2);
+    z-index: 1;
+    text-indent: 25px;
+}
+
+.search-bar:hover {
+    top: calc(30% - 5px);
+    left: calc(50% - 5px);
+}
+
+.search-bar:focus {
+    color: var(--colour2);
+    border: 5px solid var(--colour2);
+    background-color: var(--colour1);
+}
+
+.search-bar::placeholder {
+    color: var(--colour1);
+}
+
+.search-bar-shadow {
+    position: absolute;
+    top: calc(30% + 20px);
+    left: calc(50% + 20px);
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: 15%;
+    transition: all 0.25s ease-in-out;
+    background-color: black;
+    z-index: 0;
+    border-radius: calc(var(--br) - 2px);
+}
+
+.suggestions-container {  
+    font-family: "Courier New", monospace;
+    color: var(--system-light);
+    background-color: transparent;
+    height: 35%;
+    width: 24%;
+    position: absolute;
+    top: 56.5%;
+    left: 51.3%;
+    transform: translate(-50%, -50%);
+    border-radius: 0;
+    z-index: 1;
+    overflow-y: auto;
+}
+
+.suggestions-container:active {
+    padding-top: 10px; /* Adjust this to match your input height */
+    padding-bottom: 10px;
+  }
+  .suggestions-container::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  .suggestions-container::-webkit-scrollbar-track {
+    display: none;
+  }
+  
+  .suggestions-container::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    border: 3px solid var(--colour1);
+    display: none;
+}
+
+.suggestions-container::-webkit-scrollbar-thumb:hover {
+  display: block;
+}
+
+  .suggestion {
+    padding: 10px 0; /* Adds vertical padding */
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer; /* Changes cursor to pointer on hover */
+  }
+  
+  .suggestion:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Adds a subtle separator */
+  }
+  
+  .suggestion:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Adds hover effect */
+  }
+  
+  .suggestion.selected {
+    background-color: rgba(255, 255, 255, 0.2); /* Highlights selected suggestion */
+  }
+
+  @media screen and (max-width: 1500px) {
+    .search-bar {
+      width: 77%;
+      height: 10%;
+      font-size: 4.85vw;
+    }
+
+    .search-bar-shadow {
+      width: 77%;
+      height: 10%;
+    }
+
+    .suggestions-container {
+      width: 78%;
+    }
+    .suggestion {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }

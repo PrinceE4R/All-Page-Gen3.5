@@ -1,0 +1,22 @@
+:root{
+    --synthwave-light: #fe67c8;
+    --synthwave-dark: #130912;
+
+    --cyberpunk-light: #f3e600;
+    --cyberpunk-dark: #170b0b;
+
+    --death-light: #f53529;
+    --death-dark: #100404;
+
+    --matrix-light: #5ca35f;
+    --matrix-dark: #09170a;
+
+    --bladerunner-light: #c8d1bb;
+    --bladerunner-dark: #18242c;
+
+    --batman-light: #eb8632;
+    --batman-dark: #14110b;
+
+    --johnwick-light: #64c3cb;
+    --johnwick-dark: #030c14;
+}

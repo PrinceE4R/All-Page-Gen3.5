@@ -1,0 +1,173 @@
+.circular-drawer {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(91%, -50%);
+  width: 100vh;
+  height: 105vh;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--colour2);
+  border: 5px solid var(--colour1);
+  z-index: 3;
+}
+
+.holder {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 60%;
+  height: 100%;
+  z-index: 5;
+}
+
+.switch-container {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 135px;
+  height: 70px;
+}
+
+.clock-container {
+  position: absolute;
+  top: 15%;
+  left: 58%;
+  transform: translateX(-50%);
+  z-index: 3;
+  width: 170px;
+  height: 170px;
+}
+
+.info-container {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  z-index: 3;
+  width: 100px;
+  height: 100px;
+}
+
+.themer-container {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  width: 135px;
+  height: 70px;
+  border-radius: var(--br);
+}
+
+.music-container {
+  position: absolute;
+  bottom: 0;
+  left: 56%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 200px;
+  height: 200px;
+}
+
+.drawer-bar {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  z-index: 4;
+  width: 10px;
+  height: 50px;
+  background-color: var(--colour1);
+}
+
+.pseudo-drawer-bar {
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  transform: translateY(-50%);
+  z-index: 5;
+  width: 100px;
+  height: 150px;
+}
+
+.pseudo-drawer-bar svg {
+  display: none;
+}
+
+@media screen and (max-width: 1500px) {
+  .circular-drawer {
+    height: 50%;
+    width: 100vw;
+    right: 100%;
+    top: -40%;
+    transform: translate(100%, 0);
+  } 
+
+  .circle {
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+  }
+
+  .holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    overflow-x: auto;
+    padding: 0 5px;
+    justify-content: flex-start;
+  }
+
+  .switch-container,
+  .clock-container,
+  .info-container,
+  .themer-container,
+  .music-container {
+    position: static;
+    transform: none;
+    flex-shrink: 0;
+  }
+
+  .drawer-bar {
+    top: 88%;
+    left: 50%;
+    rotate: 90deg;
+    display: none;
+  }
+
+  .pseudo-drawer-bar {
+    top: 80%;
+    left: 50%;
+    transform: translateY(30%);
+    rotate: 90deg;
+    z-index: 6;
+  }
+
+  .pseudo-drawer-bar svg {
+    transform: translateY(50px);
+    width: 130%;
+    height: 100%;
+    rotate: 90deg;
+    display: block;
+    z-index: 4;
+  }
+}

@@ -1,0 +1,142 @@
+.back-light {
+    position: relative; /* Relative position to center the cover inside */
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    transform: rotate(45deg);
+    background-color: var(--colour1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+    .back-light::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: inherit;
+    background-color: inherit;
+    filter: blur(10px);
+    z-index: -1;
+    }
+        .black-frame {
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            border-radius: 20px;
+            background-color: var(--colour2);
+        }
+        .cover {
+            position: absolute; /* Absolute position to center inside the relative parent */
+            width: 169px;
+            height: 169px;
+            transform: rotate(-45deg); /* Counter-rotating the inner cover button */
+        }
+        .play {
+            position: absolute;
+            width: 15px;
+            height: 18px;
+            left: 50%;
+            bottom: 10%;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+        .pause {
+            position: absolute;
+            width: 15px;
+            height: 18px;
+            left: 50%;
+            bottom: 10%;
+            transform: translateX(-50%);
+            display: none;
+            cursor: pointer;
+        }
+        .next {
+            position: absolute;
+            width: 16px;
+            height: 18px;
+            right: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+        .previous {
+            position: absolute;
+            width: 16px;
+            height: 18px;
+            left: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+        .music-image {
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            left: 50%;
+            top: 50%;
+            border-radius: 10px;
+            transform: translate(-50%, -50%);
+            background-image: none;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            z-index: 10;
+        }
+        .music-image-cover {
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            left: 50%;
+            top: 50%;
+            border-radius: 10px;
+            transform: translate(-50%, -50%);
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            mix-blend-mode: color;
+            z-index: 11;
+        }
+        .music-image svg {
+            display: block;
+        }
+        .seek-slider {
+        -webkit-appearance: none;
+        appearance: none;
+        border-radius: 1px;
+        background: var(--colour1);
+        width: 70px;
+        height: 2px;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: visible;
+    }
+        .seek-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        background: var(--colour1);
+        border-radius: 5px;
+        width: 7px;
+        height: 7px;
+        transition: all 0.5s ease;
+        cursor: pointer;
+    }
+    .playtime {
+        color: var(--colour1);
+        text-align: left;
+        font-family: "Inria Sans", sans-serif; 
+        font-size: 10px;
+        font-weight: 400;
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 10px;
+        transition: all 0.5s ease;
+    }

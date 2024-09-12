@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-y: auto;
+    max-height: 95vh;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+.box {
+    border: 5px solid var(--colour1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--colour1);
+    font-weight: bold;
+    border-radius: var(--br);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.box:hover {
+    background-color: var(--colour1);
+    --apps-colour1: var(--colour2);
+}
+.box img {
+    max-width: 60%;
+    max-height: 60%;
+}
+.large {
+    width: 180px;
+    height: 200px;
+}
+.wide {
+    width: 180px;
+    height: 95px;
+}
+.tall {
+    width: 80px;
+    height: 200px;
+}
+.small {
+    width: 80px;
+    height: 95px;
+}

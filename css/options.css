@@ -1,0 +1,38 @@
+.options-box {
+    width: 200px;
+    height: 110px;
+    background-color: var(--colour2);
+    border-radius: 8px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.options-box::-webkit-scrollbar {
+    display: none;
+}
+
+ul {
+    color: var(--colour1);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: 400;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: var(--br);
+    text-align: left;
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+li.selected {
+    background-color: var(--colour1);
+    color: var(--colour2);
+}

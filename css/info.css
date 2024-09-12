@@ -1,0 +1,23 @@
+.info-ico {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    z-index: 0;
+}
+.details {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    z-index: 1;
+    top: -50%;
+    opacity: 0;
+    transition: all 0.15s ease;
+}
+.details:hover {
+    opacity: 1;
+}

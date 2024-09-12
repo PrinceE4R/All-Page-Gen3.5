@@ -1,0 +1,133 @@
+.rocket {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  width: 12vh;
+  height: 12vh;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+.rocket svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.rectangular-drawer {
+  position: absolute;
+  top: 0;
+  left: -415px;
+  width: 470px;
+  height: 100vh;
+  z-index: 5;
+  transition: all 0.3s ease;
+}
+
+.rectangle {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--colour2);
+  border-right: 5px solid var(--colour1);
+}
+
+.drawer-apps {
+  z-index: 5;
+  position: absolute;
+  width: 400px;
+  height: 100vh;
+  top: 2%;
+  left: 2%;
+}
+
+.rectangle-shadow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 4;
+  border-radius: var(--br);
+}
+
+.drawer-bar2 {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  z-index: 5;
+  width: 10px;
+  height: 50px;
+  background-color: var(--colour1);
+}
+
+.pseudo-drawer-bar2 {
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  transform: translateY(-50%);
+  z-index: 5;
+  width: 100px;
+  height: 100vh;/* Change to 100px for smaller box*/
+}
+
+.pseudo-drawer-bar2 svg {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+@media screen and (max-width: 1500px) {
+  .rectangular-drawer {
+    width : 100vw;
+    height: 100vh;
+    left: 0;
+    top: 150%;/*set to >= 100% or 0 to make it disappear and appear*/
+  }
+
+  .rectangle {
+    border-radius : 0;
+    border: none;
+  }
+
+  .drawer-apps {
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+  }
+
+  .container {
+    max-height: 75vh;
+  }
+
+  .drawer-bar2 {
+    display: none;
+  }
+
+  .pseudo-drawer-bar2 {
+    top : 85%;
+    right: 50%;
+    transform: translateX(50%);
+    width: 12vh;
+    height: 12vh;
+    z-index: 6;
+  }
+
+  .pseudo-drawer-bar2 svg {
+    display: block;
+    z-index: 5;
+
+  }
+
+  .rocket {
+    display: block;
+  }
+}
