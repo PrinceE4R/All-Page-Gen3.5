@@ -115,10 +115,13 @@
     }
 
     .suggestions-container {
-      width: 78%;
+      width: 65%;
     }
     .suggestion {
-      padding-left: 30px;
-      padding-right: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .suggestions-container::-webkit-scrollbar {
+      display: none;
     }
   }
